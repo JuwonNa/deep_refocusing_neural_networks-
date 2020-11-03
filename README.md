@@ -1,2 +1,10 @@
-# deep_refocusing_neural_networks-
-This repository introduces the method of deep learning-based discriminative refocusing for SEM images
+# Deep Learning-based Discriminative Refocusing of Scanning Electron Microscopy Images for Materials Science
+This repository introduces the method of deep learning-based discriminative refocusing for SEM images. Our proposed model is implemented using python with jupyter notebook IDE.
+
+# Abstract
+Scanning Electron Microscopy (SEM) has contributed significantly to the development of microstructural characteristics analysis in modern-day materials science. Despite its popular usage, out-of-focus SEM images are often obtained due to improper hardware adjustments and imaging automation errors. Therefore, it is necessary to detect and restore these out-of-focus images for further analysis. Here, we propose a deep learning-based refocusing method for SEM images, particularly secondary electron (SE) images. We consider three important aspects in which are critical for an AI-based approach to be effectively applied in real-world applications: ‘Can AI refocus SEM images on non-blind settings?’, ‘Can AI refocus SEM images on blind settings?’ and ‘Can AI discriminately refocus SEM images on blind settings?’. To infer these questions, we present progressively improved approaches based on convolutional neural networks (CNN): single-scale CNN, multi-scale CNN, and multi-scale CNN powered by data augmentation, to tackle each of the above considerations, respectively. We demonstrate that our proposed method can not only refocus low-quality SEM images but can also perform the task discriminately, implying that refocusing is conducted explicitly on out-of-focused regimes within an image. We evaluate our proposed networks with martensitic SEM images in qualitative and quantitative aspects and provide further interpretations of the deep learning-based refocusing mechanism. In conclusion, our study can significantly accelerate SEM image acquisition and is applicable to data-driven platforms in materials informatics.
+
+![graphical table of contents](https://user-images.githubusercontent.com/73891024/97991703-234ffd00-1e25-11eb-84be-5fdb9342e1af.png)
+
+# Note
+Code and data for academic purpose only
