@@ -6,12 +6,6 @@ Scanning Electron Microscopy (SEM) has contributed significantly to the developm
 
 ![graphical table of contents](https://user-images.githubusercontent.com/73891024/97992837-9b6af280-1e26-11eb-83cb-0774964fa316.png)
 
-# Networks
-
-We utilized multi-scale refocusing network (MRN) to effectively refocus deteriorated SEM images. The MRN is consist of three identical single-scale refocusing network (SRN) based on convolutional neural networks (CNN). The SRN use includes the following layers in order: convolutional layer, ReLU activation function, 16 residual blocks, convolutional layer, skip-connection, and a final convolutional layer. The skip-connection directly adds the output of the initial ReLU activation function to the last convolutional layer’s input to encourage the reuse of previous features. We used cropped and augmented SEM images of size 256 x 256 as the training data of the network. Subsequently, we designed our MRN by stacking three identical SRNs using upsampling layers. The input and output sizes are halved at each subnetwork, as the networks take 256 x 256, 128 x 128, and 64 x 64 SEM images as input during the training phase. Figure below illustrates the schematic of the MRN architecture.
-
-![architecture](https://user-images.githubusercontent.com/73891024/97993288-34017280-1e27-11eb-8bc7-46b4e6be8115.png)
-
 # Dependencies
 This project currently requires TensorFlow 1 available on Github: https://github.com/tensorflow/tensorflow.
 
@@ -23,6 +17,12 @@ In addition, please pip install the following packages:
 * PIL
 * scipy
 * sklearn
+
+# Networks
+
+We utilized multi-scale refocusing network (MRN) to effectively refocus deteriorated SEM images. The MRN is consist of three identical single-scale refocusing network (SRN) based on convolutional neural networks (CNN). The SRN use includes the following layers in order: convolutional layer, ReLU activation function, 16 residual blocks, convolutional layer, skip-connection, and a final convolutional layer. The skip-connection directly adds the output of the initial ReLU activation function to the last convolutional layer’s input to encourage the reuse of previous features. We used cropped and augmented SEM images of size 256 x 256 as the training data of the network. Subsequently, we designed our MRN by stacking three identical SRNs using upsampling layers. The input and output sizes are halved at each subnetwork, as the networks take 256 x 256, 128 x 128, and 64 x 64 SEM images as input during the training phase. Figure below illustrates the schematic of the MRN architecture.
+
+![architecture](https://user-images.githubusercontent.com/73891024/97993288-34017280-1e27-11eb-8bc7-46b4e6be8115.png)
 
 # Note
 Code and data for academic purpose only
