@@ -25,4 +25,4 @@ We utilized multi-scale refocusing network (MRN) to effectively refocus deterior
 ![architecture](https://user-images.githubusercontent.com/73891024/97993288-34017280-1e27-11eb-8bc7-46b4e6be8115.png)
 
 # Note
-Code and data for academic purpose only
+Code for academic purpose only
